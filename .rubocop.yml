@@ -1,0 +1,36 @@
+AllCops:
+  Exclude:
+    - db/schema.rb
+    - "db/**/*"
+    - "tmp/**/*"
+    - "vendor/**/*"
+    - "bin/**/*"
+  TargetRubyVersion: 2.5
+Style/Documentation:
+  Enabled: false
+  Exclude:
+    - db/migrate/*
+Metrics/MethodLength:
+  Exclude:
+    - db/migrate/**/*
+  Max:
+    20
+Metrics/PerceivedComplexity:
+  Max: 10
+Metrics/CyclomaticComplexity:
+  Max: 10
+Metrics/AbcSize:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
+LineLength:
+  Max: 120
+Metrics/BlockLength:
+  Exclude:
+    - "spec/**/*"
+Style/GuardClause:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/SymbolArray:
+  EnforcedStyle: brackets
